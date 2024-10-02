@@ -1,0 +1,63 @@
+/* Base Styling */
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --epilogue-font: "Epilogue", sans-serif;
+    --medium-font-weight: 500;
+    --bold-font-weight: 700;
+}
+
+/* Simple Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+/* Simple Reset end*/
+
+body {
+    font-family: var(--epilogue-font);
+}
+
+/* nav styling */
+.sub-link-wrapper {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--almost-white);
+    padding: 2rem 2rem;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link a {
+    color: var(--medium-gray);
+    font-weight: var(--medium-font-weight);
+}
+
+.nav-link a:hover {
+    color: var(--almost-black);
+}
